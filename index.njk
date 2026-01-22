@@ -3,12 +3,12 @@ layout: layout.njk
 title: MAKOTO SUGAWARA
 ---
 
-# エッセイ／開発記録
+<h1>エッセイ／開発記録</h1>
 
 <ul class="post-list">
 {%- for post in collections.post | reverse -%}
   <li>
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span class="post-date">{{ post.date | date }}</span>
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </li>
 {%- endfor -%}
