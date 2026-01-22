@@ -9,7 +9,7 @@ title: MAKOTO SUGAWARA
 {%- for post in collections.post | reverse -%}
   <li>
     <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </li>
 {%- endfor -%}
 </ul>
